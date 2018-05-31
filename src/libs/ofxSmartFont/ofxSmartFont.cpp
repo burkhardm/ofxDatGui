@@ -23,6 +23,19 @@
 
 
 #include "ofxSmartFont.h"
+
+#include <iostream>
+#include <memory>
+#include <string>
+#include <vector>
+
+using std::cout;
+using std::endl;
+using std::make_shared;
+using std::string;
+using std::shared_ptr;
+using std::vector;
+
 vector<shared_ptr<ofxSmartFont>> ofxSmartFont::mFonts;
 
 /*
