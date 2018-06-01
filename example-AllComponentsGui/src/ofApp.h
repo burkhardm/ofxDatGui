@@ -3,6 +3,9 @@
 #include "ofMain.h"
 #include "ofxDatGui.h"
 
+#include <cstdint>
+#include <vector>
+
 class ofApp : public ofBaseApp{
 
 	public:
@@ -25,7 +28,7 @@ class ofApp : public ofBaseApp{
         void onColorPickerEvent(ofxDatGuiColorPickerEvent e);
         void onMatrixEvent(ofxDatGuiMatrixEvent e);
     
-        uint tIndex;
-        vector<ofxDatGuiTheme*> themes;
+        std::uint32_t tIndex;
+        std::vector<ofxDatGuiTheme*> themes;
 
 };
